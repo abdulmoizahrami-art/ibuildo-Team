@@ -1,0 +1,60 @@
+/*
+ * Design tokens: every color and font lives here.
+ * Light is the base. Dark applies automatically from the system, or is forced
+ * with <html data-theme="dark"> / "light" (see ThemeToggle).
+ *
+ * Responsive breakpoints used across the project (CSS cannot share variables
+ * in media queries, so keep to these values):
+ *   1100 · 900 (tablet) · 820 (mobile menu) · 760 · 600 · 520 · 480 · 420 · 360
+ */
+:root {
+  color-scheme: light dark;
+
+  /* Brand */
+  --accent-rgb: 247 123 7;
+  --accent: rgb(var(--accent-rgb));
+  --accent-2: #fb922c;
+  --on-accent: #0a0a0a; /* text on top of the accent color */
+  --green: #22b35e;
+  --danger: #ff4d4d;
+
+  /* Surfaces (light) */
+  --bg: #ffffff;
+  --card: #f6f6f6;
+  --text: #141414;
+  --muted: #5f5f5f;
+  --line: #e4e4e4;
+  --hdr: rgb(255 255 255 / 0.85);
+  --fx-opacity: 0.45; /* background particles + circuit lines */
+
+  /* Type */
+  --font-fa: 'Vazirmatn', system-ui, sans-serif;
+  --font-en: 'Space Grotesk', 'Vazirmatn', system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0a0a0a;
+    --card: #141414;
+    --text: #fafafa;
+    --muted: #a1a1a1;
+    --line: #262626;
+    --hdr: rgb(10 10 10 / 0.85);
+    --fx-opacity: 1;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0a0a0a;
+  --card: #141414;
+  --text: #fafafa;
+  --muted: #a1a1a1;
+  --line: #262626;
+  --hdr: rgb(10 10 10 / 0.85);
+  --fx-opacity: 1;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}

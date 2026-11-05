@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="آی بیلدو؛ تیم چابک توسعه نرم‌افزار برای ساخت اپلیکیشن و وب‌سایت. آنچه تصور می‌کنی، سریع‌تر به واقعیت تبدیل کن."
+    />
+    <title>آی بیلدو | iBuildo</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="iBuildo" />
+    <meta property="og:title" content="آی بیلدو | iBuildo" />
+    <meta
+      property="og:description"
+      content="آی بیلدو؛ تیم چابک توسعه نرم‌افزار برای ساخت اپلیکیشن و وب‌سایت. آنچه تصور می‌کنی، سریع‌تر به واقعیت تبدیل کن."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="آی بیلدو | iBuildo" />
+    <meta
+      name="twitter:description"
+      content="آی بیلدو؛ تیم چابک توسعه نرم‌افزار برای ساخت اپلیکیشن و وب‌سایت. آنچه تصور می‌کنی، سریع‌تر به واقعیت تبدیل کن."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Apply the saved theme/language before first paint (prevents a flash). -->
+    <script>
+      try {
+        var r = document.documentElement,
+          th = localStorage.getItem('theme'),
+          l = localStorage.getItem('lang');
+        if (th === 'light' || th === 'dark') r.dataset.theme = th;
+        if (l === 'en') {
+          r.lang = 'en';
+          r.dir = 'ltr';
+        } else if (l === 'ps') {
+          r.lang = 'ps';
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
