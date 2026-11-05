@@ -23,7 +23,7 @@
       class="pill whatsapp"
       href={whatsappLink(CONTACT.whatsapp)}
       target={CONTACT.whatsapp ? '_blank' : undefined}
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       <Icon name="whatsapp" size={17} />{t('contact.whatsapp')}
     </a>

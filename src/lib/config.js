@@ -1,8 +1,11 @@
 // Things you will edit most often. No code knowledge needed.
 // Replace the placeholder values below with the real business contact details.
+const BUSINESS_PHONE = '+93740486712';
+
 export const CONTACT = {
-  whatsapp: '+989000000000',
-  phone: '+989000000000',
+  whatsapp: BUSINESS_PHONE,
+  phone: BUSINESS_PHONE,
+  phoneDisplay: '+93 740 486 712',
   email: 'your-email@ibuildo.com',
   location: 'آدرس کسب‌وکار شما'
 };

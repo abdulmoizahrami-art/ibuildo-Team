@@ -98,6 +98,8 @@ export default {
   contact: {
     title: 'Let’s <b>start</b> your project together',
     lead: 'Write a few lines about your idea and we’ll get back to you soon.',
+    sectionTitle: 'Let’s <span>start</span> your project together',
+    sectionDescription: 'Write a few lines about your idea and we’ll get back to you soon.',
     fast: {
       title: 'Quick response',
       desc: 'We usually get back to you within 24 hours.'

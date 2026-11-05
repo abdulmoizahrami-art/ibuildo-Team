@@ -15,13 +15,13 @@
         <span class="rule" aria-hidden="true"></span>
       </div>
 
-      <h2 id="contact-heading">پروژه‌تان را با هم <span>شروع</span> کنیم</h2>
-      <p class="lead">چند خط درباره ایده‌تان بنویسید، به‌زودی با شما تماس می‌گیریم.</p>
+      <h2 id="contact-heading">{@html t('contact.sectionTitle')}</h2>
+      <p class="lead">{t('contact.sectionDescription')}</p>
 
       <div class="actions">
         <a class="btn action primary" href={phoneLink(CONTACT.phone)}>
           <span class="icon-wrap" aria-hidden="true"><Icon name="phone" size={18} /></span>
-          <span class="ltr">{CONTACT.phone}</span>
+          <span class="ltr">{CONTACT.phoneDisplay}</span>
         </a>
 
         <a
@@ -31,7 +31,7 @@
           rel="noopener noreferrer"
         >
           <span class="icon-wrap" aria-hidden="true"><Icon name="whatsapp" size={18} /></span>
-          <span>گفتگو در واتساپ</span>
+          <span>{t('contact.whatsapp')}</span>
         </a>
       </div>
 
@@ -56,7 +56,7 @@
           <span class="meta-icon" aria-hidden="true"><Icon name="phone" size={18} /></span>
           <div class="meta-copy">
             <small>تماس</small>
-            <span class="ltr">{CONTACT.phone}</span>
+            <span class="ltr">{CONTACT.phoneDisplay}</span>
           </div>
         </li>
       </ul>
@@ -114,7 +114,7 @@
     color: var(--text);
   }
 
-  h2 span {
+  h2 :global(span) {
     color: var(--accent);
   }
 
