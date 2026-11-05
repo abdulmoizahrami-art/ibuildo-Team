@@ -59,17 +59,17 @@ export default {
     members: {
       mohammad: {
         name: 'Mohammad Seyed Ghazizadeh',
-        role: 'General Lead',
+        role: 'Team Lead & Software Engineer',
         desc: 'Leads the whole team and manages projects.'
       },
       abdulmoez: {
         name: 'Abdulmoez Ehrami',
-        role: 'Frontend & UI/UX Lead',
+        role: 'Frontend & UI/UX Engineer',
         desc: 'Owns design and the user interface, with his team.'
       },
       rasul: {
         name: 'Seyed Rasul Borhani',
-        role: 'Backend Lead',
+        role: 'Backend & Systems Integration Engineer',
         desc: 'Owns server architecture and databases, with his team.'
       }
     }
