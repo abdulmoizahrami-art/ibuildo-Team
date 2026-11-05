@@ -107,6 +107,8 @@ export default {
     whatsapp: 'گفتگو در واتساپ',
     call: 'تماس مستقیم',
     addressLabel: 'آدرس',
+    emailLabel: 'ایمیل',
+    phoneLabel: 'تماس',
     address: 'کابل - بدخشان - کندز',
     form: {
       name: 'نام',

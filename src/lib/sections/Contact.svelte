@@ -48,14 +48,14 @@
         <li>
           <span class="meta-icon" aria-hidden="true"><Icon name="mail" size={18} /></span>
           <div class="meta-copy">
-            <small>ایمیل</small>
+            <small>{t('contact.emailLabel')}</small>
             <span class="ltr">{CONTACT.email}</span>
           </div>
         </li>
         <li>
           <span class="meta-icon" aria-hidden="true"><Icon name="phone" size={18} /></span>
           <div class="meta-copy">
-            <small>تماس</small>
+            <small>{t('contact.phoneLabel')}</small>
             <span class="ltr">{CONTACT.phoneDisplay}</span>
           </div>
         </li>
