@@ -6,8 +6,7 @@ export const CONTACT = {
   whatsapp: BUSINESS_PHONE,
   phone: BUSINESS_PHONE,
   phoneDisplay: '+93 740 486 712',
-  email: 'your-email@ibuildo.com',
-  location: 'آدرس کسب‌وکار شما'
+  email: 'your-email@ibuildo.com'
 };
 
 // Header navigation. "id" = section id on the page, "label" = translation key.

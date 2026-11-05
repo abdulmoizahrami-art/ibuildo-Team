@@ -106,6 +106,7 @@ export default {
     },
     whatsapp: 'Chat on WhatsApp',
     call: 'Call directly',
+    address: 'Kabul - Badakhshan - Kunduz',
     form: {
       name: 'Name',
       namePh: 'Full name',

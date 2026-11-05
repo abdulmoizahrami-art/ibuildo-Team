@@ -42,7 +42,7 @@
           <span class="meta-icon" aria-hidden="true"><Icon name="location" size={18} /></span>
           <div class="meta-copy">
             <small>آدرس</small>
-            <span>{CONTACT.location}</span>
+            <span>{t('contact.address')}</span>
           </div>
         </li>
         <li>
