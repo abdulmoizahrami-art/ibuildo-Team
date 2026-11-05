@@ -106,7 +106,8 @@ export default {
     },
     whatsapp: 'په واټساپ خبرې',
     call: 'مستقیمه اړیکه',
-    address: 'Kabul - Badakhshan - Kunduz',
+    addressLabel: 'پته',
+    address: 'کابل - بدخشان - کندز',
     form: {
       name: 'نوم',
       namePh: 'بشپړ نوم',

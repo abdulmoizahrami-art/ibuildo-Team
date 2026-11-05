@@ -106,6 +106,7 @@ export default {
     },
     whatsapp: 'گفتگو در واتساپ',
     call: 'تماس مستقیم',
+    addressLabel: 'آدرس',
     address: 'کابل - بدخشان - کندز',
     form: {
       name: 'نام',

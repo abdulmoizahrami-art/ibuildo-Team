@@ -41,7 +41,7 @@
         <li>
           <span class="meta-icon" aria-hidden="true"><Icon name="location" size={18} /></span>
           <div class="meta-copy">
-            <small>آدرس</small>
+            <small>{t('contact.addressLabel')}</small>
             <span>{t('contact.address')}</span>
           </div>
         </li>
