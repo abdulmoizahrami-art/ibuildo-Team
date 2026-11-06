@@ -114,7 +114,7 @@ export default {
       name: 'Name',
       namePh: 'Full name',
       email: 'Email',
-      emailPh: 'you@company.com',
+      emailPh: 'ibuildo@gmail.com',
       phone: 'Phone number',
       phonePh: '+93 700 123 456',
       subject: 'Subject',
