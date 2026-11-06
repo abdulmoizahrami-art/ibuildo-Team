@@ -58,7 +58,7 @@ export default {
     lead: 'Three leaders, each with an agile team.',
     members: {
       mohammad: {
-        name: 'Mohammad Seyed Qazizada',
+        name: 'Mohammad Sayed Qazizada',
         role: 'Team Lead & Software Engineer',
         desc: 'Leads the whole team and manages projects.'
       },
@@ -68,7 +68,7 @@ export default {
         desc: 'Owns design and the user interface, with his team.'
       },
       rasul: {
-        name: 'Seyed Rasol Burhani',
+        name: 'Sayed Rasol Burhani',
         role: 'Backend & Systems Integration Engineer',
         desc: 'Owns server architecture and databases, with his team.'
       }
