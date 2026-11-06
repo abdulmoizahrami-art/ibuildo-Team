@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# The sitemap will resolve relative to the live site origin when deployed.
+# Do not use localhost or a development URL in production SEO files.
+Sitemap: /sitemap.xml
