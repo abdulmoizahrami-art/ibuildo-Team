@@ -107,7 +107,6 @@ export default {
     whatsapp: 'په واټساپ خبرې',
     call: 'مستقیمه اړیکه',
     addressLabel: 'پته',
-    emailLabel: 'برېښنالیک',
     phoneLabel: 'اړیکه',
     address: 'کابل - بدخشان - کندز',
     form: {

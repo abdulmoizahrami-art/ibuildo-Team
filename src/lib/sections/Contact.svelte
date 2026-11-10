@@ -46,13 +46,6 @@
           </div>
         </li>
         <li>
-          <span class="meta-icon" aria-hidden="true"><Icon name="mail" size={18} /></span>
-          <div class="meta-copy">
-            <small>{t('contact.emailLabel')}</small>
-            <span class="ltr">{CONTACT.email}</span>
-          </div>
-        </li>
-        <li>
           <span class="meta-icon" aria-hidden="true"><Icon name="phone" size={18} /></span>
           <div class="meta-copy">
             <small>{t('contact.phoneLabel')}</small>
@@ -196,9 +189,10 @@
   .meta {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
     gap: 14px;
-    margin: 18px 0 0;
+    width: min(720px, 100%);
+    margin: 18px auto 0;
     padding: 0;
   }
 
@@ -210,7 +204,7 @@
     min-height: 64px;
     padding: 10px 12px;
     border-inline-start: 1px solid var(--line);
-    text-align: start;
+    text-align: center;
   }
 
   .meta li:first-child {
@@ -254,7 +248,7 @@
     }
 
     .meta li {
-      justify-content: flex-start;
+      justify-content: center;
       border-inline-start: 0;
       border-top: 1px solid var(--line);
       padding-top: 14px;

@@ -107,7 +107,6 @@ export default {
     whatsapp: 'Chat on WhatsApp',
     call: 'Call directly',
     addressLabel: 'Location',
-    emailLabel: 'Email',
     phoneLabel: 'Phone',
     address: 'Kabul - Badakhshan - Kunduz',
     form: {
