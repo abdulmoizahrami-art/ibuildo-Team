@@ -1,0 +1,20 @@
+{
+  "name": "iBuildo",
+  "short_name": "iBuildo",
+  "description": "آی بیلدو تیم چابک فریلنس توسعه نرم‌افزار است. طراحی UI/UX، فرانت‌اند، بک‌اند، اپلیکیشن اندروید و iOS و وب‌سایت را از ایده تا انتشار انجام می‌دهیم.",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#f77b07",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

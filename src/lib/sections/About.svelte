@@ -3,16 +3,23 @@
   import { t } from '$lib/state/settings.svelte.js';
 </script>
 
-<section class="about">
-  <div class="wrap grid">
-    <p>{@html t('about.text')}</p>
-    <AboutIcons />
+<section class="about" id="about" aria-labelledby="about-heading">
+  <div class="wrap">
+    <h2 id="about-heading">{t('about.title')}</h2>
+    <div class="grid">
+      <p>{@html t('about.text')}</p>
+      <AboutIcons />
+    </div>
   </div>
 </section>
 
 <style>
   .about {
     padding-top: clamp(24px, 5vw, 56px);
+  }
+  h2 {
+    margin: 0 0 28px;
+    font-weight: 800;
   }
   .grid {
     display: grid;

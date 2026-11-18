@@ -1,31 +1,25 @@
 <script>
   import logo from '$assets/brand/logo.svg';
+  import { t } from '$lib/state/settings.svelte.js';
 
-  // "wordmark" = icon + name (header). "full" = also the slogan line (footer).
-  // Size it from outside with the --logo-h CSS variable.
-  let { variant = 'wordmark' } = $props();
+  // The file is the full mark (icon, name, and slogan). Size it from outside
+  // with the --logo-h CSS variable. Do not crop it: the bottom of the icon
+  // and the slogan sit in the lower part of the same image.
+  let { variant = 'full' } = $props();
 </script>
 
-<a class="logo {variant}" href="#top" aria-label="آی بیلدو / iBuildo">
+<a class="logo {variant}" href="#hero" aria-label={t('a11y.home')}>
   <img src={logo} alt="iBuildo" />
 </a>
 
 <style>
   .logo {
     display: block;
-    height: var(--logo-h, 34px);
-    width: calc(var(--logo-h, 34px) * var(--ratio));
-    overflow: hidden; /* the wordmark variant crops the slogan line off the same image */
-  }
-  .wordmark {
-    --ratio: 3.22; /* 1900 / 590 */
-  }
-  .full {
-    --ratio: 2.79; /* 1900 / 680 */
+    line-height: 0;
   }
   img {
     display: block;
-    width: 100%;
-    height: auto;
+    height: var(--logo-h, 42px);
+    width: auto;
   }
 </style>

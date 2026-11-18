@@ -3,11 +3,11 @@
   import { t } from '$lib/state/settings.svelte.js';
 </script>
 
-<section class="hero">
+<section class="hero" id="hero" aria-labelledby="hero-heading">
   <div class="wrap grid">
     <div class="text">
       <!-- {@html}: the translation contains <b>/<span> for line break and orange words -->
-      <h1>{@html t('hero.title')}</h1>
+      <h1 id="hero-heading">{@html t('hero.title')}</h1>
       <p>{t('hero.subtitle')}</p>
       <div class="actions">
         <a class="btn primary" href="#contact">{t('common.start')}</a>

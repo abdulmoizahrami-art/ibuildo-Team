@@ -5,9 +5,9 @@
   import { TEAM } from '$lib/data/team.js';
 </script>
 
-<section id="team" class="flush-top">
+<section id="team" class="flush-top" aria-labelledby="team-heading">
   <div class="wrap">
-    <SectionHeading title={t('nav.team')} lead={t('team.lead')} />
+    <SectionHeading id="team-heading" title={t('nav.team')} lead={t('team.lead')} />
     <div class="grid">
       {#each TEAM as member (member.id)}
         <TeamCard {member} />

@@ -1,16 +1,26 @@
 // EN dictionary. Same structure in every language (checked by a test).
 export default {
   meta: {
-    title: 'iBuildo'
+    title: 'iBuildo | Freelance App & Website Development',
+    description:
+      'iBuildo is an agile freelance software team. We design and build mobile apps and websites — UI/UX, frontend, and backend — from idea to launch.',
+    keywords:
+      'iBuildo, freelance software team, app development, website development, UI/UX design, frontend, backend, Android, iOS, Afghanistan',
+    imageAlt: 'iBuildo logo, software development team'
   },
   a11y: {
+    skip: 'Skip to main content',
+    home: 'iBuildo, home',
     mainNavigation: 'Main navigation',
+    footerNavigation: 'Footer',
     menu: 'Menu',
     language: 'Language',
     theme: 'Theme',
     contactDetails: 'Contact details'
   },
   nav: {
+    home: 'Home',
+    about: 'About',
     services: 'Services',
     team: 'Team',
     process: 'Process',
@@ -27,6 +37,7 @@ export default {
       'iBuildo is an agile software team that builds apps and websites. Turn what you imagine into reality, faster.'
   },
   about: {
+    title: 'About iBuildo',
     text: 'We are a freelance team built for <em>speed</em>. Three leaders, several small teams, one goal: your app or website, delivered with quality in the shortest time.'
   },
   services: {

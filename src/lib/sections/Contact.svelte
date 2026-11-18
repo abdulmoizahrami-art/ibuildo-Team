@@ -11,7 +11,7 @@
     <div class="contact-content">
       <div class="brand-bar">
         <span class="rule" aria-hidden="true"></span>
-        <Logo variant="wordmark" />
+        <Logo variant="full" />
         <span class="rule" aria-hidden="true"></span>
       </div>
 
@@ -37,22 +37,24 @@
 
       <div class="divider" aria-hidden="true"></div>
 
-      <ul class="meta" aria-label={t('a11y.contactDetails')}>
-        <li>
-          <span class="meta-icon" aria-hidden="true"><Icon name="location" size={18} /></span>
-          <div class="meta-copy">
-            <small>{t('contact.addressLabel')}</small>
-            <span>{t('contact.address')}</span>
-          </div>
-        </li>
-        <li>
-          <span class="meta-icon" aria-hidden="true"><Icon name="phone" size={18} /></span>
-          <div class="meta-copy">
-            <small>{t('contact.phoneLabel')}</small>
-            <span class="ltr">{CONTACT.phoneDisplay}</span>
-          </div>
-        </li>
-      </ul>
+      <address>
+        <ul class="meta" aria-label={t('a11y.contactDetails')}>
+          <li>
+            <span class="meta-icon" aria-hidden="true"><Icon name="location" size={18} /></span>
+            <div class="meta-copy">
+              <small>{t('contact.addressLabel')}</small>
+              <span>{t('contact.address')}</span>
+            </div>
+          </li>
+          <li>
+            <span class="meta-icon" aria-hidden="true"><Icon name="phone" size={18} /></span>
+            <div class="meta-copy">
+              <small>{t('contact.phoneLabel')}</small>
+              <a class="ltr" href={phoneLink(CONTACT.phone)}>{CONTACT.phoneDisplay}</a>
+            </div>
+          </li>
+        </ul>
+      </address>
     </div>
   </div>
 </section>
@@ -95,7 +97,7 @@
   }
 
   .brand-bar :global(.logo) {
-    --logo-h: 52px;
+    --logo-h: 72px;
     margin: 0 auto;
   }
 
@@ -186,6 +188,10 @@
     background: linear-gradient(90deg, transparent, var(--line), transparent);
   }
 
+  address {
+    font-style: normal;
+  }
+
   .meta {
     list-style: none;
     display: grid;
@@ -229,7 +235,8 @@
     letter-spacing: 0.02em;
   }
 
-  .meta-copy span {
+  .meta-copy span,
+  .meta-copy a {
     color: var(--text);
     font-size: 0.9rem;
     font-weight: 500;
@@ -275,7 +282,7 @@
     }
 
     .brand-bar :global(.logo) {
-      --logo-h: 46px;
+      --logo-h: 60px;
     }
   }
 </style>

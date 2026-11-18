@@ -1,7 +1,5 @@
-import fa from '$lib/i18n/fa.js';
-import en from '$lib/i18n/en.js';
-import ps from '$lib/i18n/ps.js';
-import { getByPath } from '$lib/utils/path.js';
+import { DICTIONARIES, translate } from '$lib/i18n/translate.js';
+import { readLangFromLocation } from '$lib/seo/url.js';
 
 export const LANGS = [
   { code: 'fa', label: 'فارسی', dir: 'rtl' },
@@ -9,8 +7,16 @@ export const LANGS = [
   { code: 'ps', label: 'پښتو', dir: 'rtl' }
 ];
 const THEMES = ['system', 'light', 'dark'];
-const DICTIONARIES = { fa, en, ps };
 const normalizeLang = (value) => (LANGS.some((lang) => lang.code === value) ? value : 'fa');
+
+function initialLang() {
+  const stored = load('lang', Object.keys(DICTIONARIES), 'fa');
+  if (typeof window === 'undefined') return stored;
+  const fromLocation = readLangFromLocation(window.location.pathname, window.location.search);
+  if (!fromLocation) return stored;
+  save('lang', fromLocation);
+  return fromLocation;
+}
 const normalizeTheme = (value) => (THEMES.includes(value) ? value : 'system');
 
 function load(key, allowed, fallback) {
@@ -33,14 +39,13 @@ function save(key, value) {
 // $state makes this object reactive: every component that reads
 // settings.lang re-renders automatically when it changes.
 export const settings = $state({
-  lang: load('lang', Object.keys(DICTIONARIES), 'fa'),
+  lang: initialLang(),
   theme: load('theme', THEMES, 'system')
 });
 
 /** Translate a dotted key (e.g. 'hero.title') in the current language. Falls back to Persian. */
 export function t(key) {
-  const lang = normalizeLang(settings.lang);
-  return getByPath(DICTIONARIES[lang], key) ?? getByPath(DICTIONARIES.fa, key) ?? key;
+  return translate(normalizeLang(settings.lang), key);
 }
 
 export function setLang(code) {

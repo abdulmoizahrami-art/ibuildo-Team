@@ -16,3 +16,13 @@ export const NAV = [
   { id: 'process', label: 'nav.process' },
   { id: 'contact', label: 'nav.contact' }
 ];
+
+// Every section, linked from the footer so crawlers can reach all of the page.
+export const FOOTER_NAV = [
+  { id: 'hero', label: 'nav.home' },
+  { id: 'about', label: 'nav.about' },
+  { id: 'services', label: 'nav.services' },
+  { id: 'team', label: 'nav.team' },
+  { id: 'process', label: 'nav.process' },
+  { id: 'contact', label: 'nav.contact' }
+];

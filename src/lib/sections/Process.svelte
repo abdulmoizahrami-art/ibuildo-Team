@@ -4,17 +4,17 @@
   import { PROCESS_STEPS } from '$lib/data/process.js';
 </script>
 
-<section id="process" class="flush-top">
+<section id="process" class="flush-top" aria-labelledby="process-heading">
   <div class="wrap">
-    <SectionHeading title={t('nav.process')} lead={t('process.lead')} />
-    <div class="steps">
+    <SectionHeading id="process-heading" title={t('nav.process')} lead={t('process.lead')} />
+    <ol class="steps">
       {#each PROCESS_STEPS as id (id)}
-        <div class="step">
+        <li class="step">
           <h3>{t(`process.steps.${id}.title`)}</h3>
           <p>{t(`process.steps.${id}.desc`)}</p>
-        </div>
+        </li>
       {/each}
-    </div>
+    </ol>
   </div>
 </section>
 
@@ -23,6 +23,9 @@
     counter-reset: step;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+    padding: 0;
+    list-style: none;
     border-top: 1px solid rgb(var(--accent-rgb) / 0.65);
   }
   .step {

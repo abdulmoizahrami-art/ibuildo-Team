@@ -11,11 +11,18 @@
     <div class="info">
       <div class="initial" aria-hidden="true">{t(key('name')).charAt(0)}</div>
       <h3>{t(key('name'))}</h3>
-      <div class="role">{t(key('role'))}</div>
+      <p class="role">{t(key('role'))}</p>
     </div>
     <div class="photo">
       {#if member.photo}
-        <img src={member.photo} alt={t(key('name'))} width="300" height="300" loading="lazy" />
+        <img
+          src={member.photo}
+          alt="{t(key('name'))}, {t(key('role'))}"
+          width="300"
+          height="300"
+          loading="lazy"
+          decoding="async"
+        />
       {/if}
     </div>
   </div>
@@ -45,9 +52,9 @@
     font-weight: 700;
   }
   .role {
+    margin: 0 0 10px;
     color: var(--accent);
     font-size: 0.9rem;
-    margin-bottom: 10px;
   }
   .photo {
     width: 100px;

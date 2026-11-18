@@ -5,9 +5,9 @@
   import { SERVICES } from '$lib/data/services.js';
 </script>
 
-<section id="services" class="flush-top">
+<section id="services" class="flush-top" aria-labelledby="services-heading">
   <div class="wrap">
-    <SectionHeading title={t('nav.services')} lead={t('services.lead')} />
+    <SectionHeading id="services-heading" title={t('nav.services')} lead={t('services.lead')} />
     <div class="grid">
       {#each SERVICES as service (service.id)}
         <ServiceCard {service} />

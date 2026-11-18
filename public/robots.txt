@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-# The sitemap will resolve relative to the live site origin when deployed.
-# Do not use localhost or a development URL in production SEO files.
+# Language homepages: / (Persian), /en/ (English), /ps/ (Pashto).
+# Set VITE_SITE_URL=https://your-domain before `npm run build` so sitemap URLs are absolute.
 Sitemap: /sitemap.xml

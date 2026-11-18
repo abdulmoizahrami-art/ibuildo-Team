@@ -53,7 +53,7 @@
     height: 68px;
   }
   .brand {
-    --logo-h: 34px;
+    --logo-h: 44px;
   }
   nav {
     display: flex;
@@ -109,12 +109,12 @@
       gap: 6px;
     }
     .brand {
-      --logo-h: 26px;
+      --logo-h: 36px;
     }
   }
   @media (max-width: 360px) {
     .brand {
-      --logo-h: 22px;
+      --logo-h: 32px;
     }
   }
 </style>

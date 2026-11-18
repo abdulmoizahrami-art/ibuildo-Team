@@ -1,8 +1,8 @@
 <script>
-  let { title, lead } = $props();
+  let { title, lead, id } = $props();
 </script>
 
-<h2>{title}</h2>
+<h2 {id}>{title}</h2>
 <p class="lead">{lead}</p>
 
 <style>
