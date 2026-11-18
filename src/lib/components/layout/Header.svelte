@@ -77,6 +77,20 @@
   }
 
   @media (max-width: 820px) {
+    /* The file is the full mark. On a phone, show only the icon: it occupies
+       the left ~30% of the bitmap and the name starts after a gap. direction
+       stays ltr so the crop keeps the icon when the page is RTL. */
+    .brand :global(.logo) {
+      width: calc(var(--logo-h) * 580 / 680);
+      height: var(--logo-h);
+      overflow: hidden;
+      direction: ltr;
+      flex-shrink: 0;
+    }
+    .brand :global(.logo img) {
+      width: calc(var(--logo-h) * 1900 / 680);
+      max-width: none;
+    }
     nav,
     .tools .cta {
       display: none;
