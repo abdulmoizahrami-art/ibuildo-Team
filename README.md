@@ -77,6 +77,39 @@ src/
 - **`onMount`**: کد بعد از نمایش کامپوننت (`Particles.svelte`).
 - **`{@html}`**: فقط برای متن‌های خودمان در i18n و آیکون‌ها، هرگز برای ورودی کاربر.
 
+## ارسال به ریپوی اصلی
+
+این پوشه فورک است. `origin` فورک شماست و `upstream` ریپوی اصلی است.
+
+- فورک: `https://github.com/MSayedQ/ibuildo-Team-web.git`
+- ریپوی اصلی: `https://github.com/abdulmoizahrami-art/ibuildo-Team.git`
+
+یک بار ریموت اصلی را اضافه کنید. اگر `upstream` از قبل در `git remote -v` هست، این خط را رد کنید.
+
+```bash
+git remote add upstream https://github.com/abdulmoizahrami-art/ibuildo-Team.git
+git remote -v
+```
+
+هر بار که خواستید کد همین برنچ `main` را بفرستید:
+
+```bash
+git status
+git add .
+git commit -m "پیام تغییر"
+git push origin main
+git push upstream main
+```
+
+`git push upstream main` کد را روی `main` ریپوی اصلی می‌گذارد، به شرطی که آنجا کامیت جدیدتری نداشته باشد. اگر گیت این دستور را رد کرد، اول همان ریپو را بگیرید و بعد دوباره بفرستید:
+
+```bash
+git fetch upstream
+git merge upstream/main
+git push origin main
+git push upstream main
+```
+
 ## هنوز باقی است
 
 - شماره واتساپ و تلفن خالی است (تا آن موقع دکمه‌ها به فرم می‌روند).
